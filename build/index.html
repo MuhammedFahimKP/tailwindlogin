@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    
+ </head>  
+ <body class="radial-blue min-h-screen flex flex-row justify-center items-center">
+    <div class="max-w-4xl flex flex-row  w-80 h-80 ">
+            <form action="" class="w-full h-30    bg-gray-900/10 rounded-s p-1 shadow-2xl border-slate-800  border-1 flex flex-col  place-items-start">
+                <section class="flex  justify-between items-center  mx-auto mt-10">
+                    <p class="text-white text-4xl">Login</p>
+                </section>
+                <section class="flex mt-10 justify-center items-center mx-auto w-full">
+                    <input type="email" id="email" class="p-2  w-60 rounded-xl outline-none focus:bg-gray-100" placeholder="Email">
+                </section>
+                <section class="flex mt-4 justify-center items-center mx-auto w-full">
+                    <input type="password" id="Password" class="p-2 w-60 rounded-xl outline-none focus:bg-gray-100" placeholder="Password">
+                    <h6 class="mt-1 text-red-600" id="warn"></h6>
+                </section>
+                <section class="flex mt-5 justify-end items-center mx-auto">
+                    <label for="checkbox" class="text-gray-500">Show Password</label><input type="checkbox" onclick="ShowPassword()"  class="w-8 h-4 outline-none border-none" id="checkbox">
+                </section>
+            </form>
+
+
+
+    </div>
+    <script>
+        const password=document.getElementById('Password');
+        const warning=document.getElementById('warn');
+        const check=document.getElementById('checkbox');
+        
+
+        function ShowPassword(){
+           if (password.type=='password'){
+               password.type='text';
+            }else{
+                password.type='password';
+            }
+        }
+        
+        if(password=null){
+                for(i=0;i<password.lenght;i++){
+                  if( password[i].isIntger){
+                  }else{
+                    window.alert(i);
+                  }
+
+                }
+        }       
+
+    </script>
+ </body>
+</html>
